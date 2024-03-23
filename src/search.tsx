@@ -80,7 +80,7 @@ const SearchPage = () => {
         placeholder="授業名・教員名は部分一致"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyPress}
         style={{ width: 300, marginRight: '10px' }}
       />
     <Button type="primary" onClick={fetchResults} loading={loading}>
